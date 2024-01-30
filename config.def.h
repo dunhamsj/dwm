@@ -61,6 +61,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd [] = { "st"     , NULL };
 static const char *firefox [] = { "firefox", NULL };
 static const char *slack   [] = { "slack"  , NULL };
+static const char *myzoom  [] = { "zoom"   , NULL };
 static const char *ranger  [] = { "ranger" , NULL };
 
 static const Key keys[] = {
@@ -69,6 +70,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_f,      spawn,          {.v = firefox } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = slack } },
+	{ MODKEY|ShiftMask,             XK_z,      spawn,          {.v = myzoom } },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          {.v = ranger } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
